@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Marketing Event" section_id="36e99b0fb3fa3200487eafe456a8dc64" sys_domain="global" table="sn_marketing_marketing_event" version="3" view="Mobile">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-05-22 22:29:13</sys_created_on>
+            <sys_id>f6e99b0fb3fa3200487eafe456a8dc66</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Marketing Event" display_value="Marketing Event" name="sn_marketing_marketing_event" sys_domain="global" view="0e546271b3323200487eafe456a8dc52">36e99b0fb3fa3200487eafe456a8dc64</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-05-22 22:29:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>city</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-05-22 22:29:13</sys_created_on>
+            <sys_id>7ee99b0fb3fa3200487eafe456a8dc66</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Marketing Event" display_value="Marketing Event" name="sn_marketing_marketing_event" sys_domain="global" view="0e546271b3323200487eafe456a8dc52">36e99b0fb3fa3200487eafe456a8dc64</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-05-22 22:29:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Marketing Event</caption>
+            <header>false</header>
+            <name>sn_marketing_marketing_event</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-05-22 22:29:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>36e99b0fb3fa3200487eafe456a8dc64</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Marketing Event</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Marketing Events Applications" source="sn_marketing">e5799a03b3fa3200487eafe456a8dc56</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Marketing Events Applications">e5799a03b3fa3200487eafe456a8dc56</sys_scope>
+            <sys_update_name>sys_ui_section_36e99b0fb3fa3200487eafe456a8dc64</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-05-22 22:29:13</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Mobile" name="Mobile">0e546271b3323200487eafe456a8dc52</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>budget</field>
+        <global>true</global>
+        <messages>getMessage('must be after')</messages>
+        <name>End Date Validation</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+    if(g_form.getValue('end_date') == '')
+        return;
+
+    if(g_form.getValue('end_date') < g_form.getValue('start_date')) {
+        g_form.clearMessages();  
+
+    g_form.addErrorMessage(g_form.getLabelOf('end_date') + ' ' 
+	+ getMessage('must be after') + ' ' + g_form.getLabelOf('start_date'));
+        return false;
+    }   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-05-25 00:07:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>71330e7bb3be3200487eafe456a8dc02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>End Date Validation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Marketing Events Applications" source="sn_marketing">e5799a03b3fa3200487eafe456a8dc56</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Marketing Events Applications">e5799a03b3fa3200487eafe456a8dc56</sys_scope>
+        <sys_update_name>sys_script_client_71330e7bb3be3200487eafe456a8dc02</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-05-25 00:07:19</sys_updated_on>
+        <table>sn_marketing_marketing_event</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

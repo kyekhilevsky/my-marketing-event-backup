@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>sn_marketing.attendee.deleted</event_name>
+        <name>Remove attendee</name>
+        <order>100</order>
+        <script><![CDATA[(function removeAttendees() {
+	//Get marketing event from event
+	var mrkevent = new GlideRecord('sn_marketing_marketing_event');
+	mrkevent.get(event.parm1);
+	//Count attendees for marketing event
+	var numOfAttendees = 0;
+	var attendees = new GlideAggregate('sn_marketing_attendee');
+	attendees.addQuery('marketing_event', event.parm1);
+	attendees.addAggregate('COUNT');
+	attendees.query();
+	if(attendees.next())
+		numOfAttendees = attendees.getAggregate('COUNT');
+	//Set attendees registered field
+	mrkevent.number_of_attendees_registered = numOfAttendees;
+	mrkevent.update();
+}());]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-05-30 22:58:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>df2d6c79b3033200487eafe456a8dc6e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Remove attendee</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Marketing Events Applications" source="sn_marketing">e5799a03b3fa3200487eafe456a8dc56</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Marketing Events Applications">e5799a03b3fa3200487eafe456a8dc56</sys_scope>
+        <sys_update_name>sysevent_script_action_df2d6c79b3033200487eafe456a8dc6e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-05-31 19:00:01</sys_updated_on>
+    </sysevent_script_action>
+</record_update>

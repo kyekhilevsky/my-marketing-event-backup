@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="" label="Marketing Events CSV 2" language="en" table="sn_marketing_marketing_events_csv_2">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Marketing Events CSV 2</label>
+            <language>en</language>
+            <name>sn_marketing_marketing_events_csv_2</name>
+            <plural>Marketing Events CSV 2s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-05-22 19:20:08</sys_created_on>
+            <sys_id>f0aeea07b3fa3200487eafe456a8dc5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Marketing Events CSV 2</sys_name>
+            <sys_package display_value="Marketing Events Applications" source="sn_marketing">e5799a03b3fa3200487eafe456a8dc56</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Marketing Events Applications">e5799a03b3fa3200487eafe456a8dc56</sys_scope>
+            <sys_update_name>sys_documentation_sn_marketing_marketing_events_csv_2__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-05-22 19:20:08</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
